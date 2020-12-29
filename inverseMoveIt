@@ -1,0 +1,31 @@
+#!/bin/bash
+
+title=Error$((0+$RANDOM%20000))
+
+text=$1
+
+zenity --title "$title" --error --text "$text" &
+minX=1920
+minY=1080
+maxX=0
+maxY=0
+
+x=$(if [ -z $2 ]; then echo $maxX; else echo $2; fi)
+y=$(if [ -z $3 ]; then echo $maxY; else echo $3; fi)
+
+t=$(if [ -z $4 ]; then echo ".001s"; else echo "$4"; fi)
+
+steps=$(if [ -z $5 ]; then echo 1000; else echo $5; fi)
+
+movX=$6
+movY=$7
+howIncr=$(if [ -z $8 ]; then echo "1"; else echo "$8"; fi)
+
+for (( i=0; i<$steps; i++ ))
+do
+sleep $t
+wmctrl -r "$title" -e 0,$x,$y,100,100
+[ $movX -eq 1 ] && if [ $((x-$howIncr)) -ge $maxX ]; then x=$((x-$howIncr)); else break; fi
+[ $movY -eq 1 ] && if [ $((y-$howIncr)) -ge $maxX ]; then y=$((y-$howIncr)); else break; fi
+done
+wmctrl -c $title

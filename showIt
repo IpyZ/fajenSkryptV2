@@ -1,0 +1,10 @@
+#!/bin/bash
+
+title=Error$((0+$RANDOM%20000))
+t=$(if [ -z $2 ]; then echo "1s"; else echo "$2"; fi)
+
+zenity --title "$title" --error --text "$1" &
+sleep .25s
+wmctrl -r $title -e 0,$((0+$RANDOM%1920)),$((0+$RANDOM%1080)),100,100
+sleep $t
+wmctrl -c $title

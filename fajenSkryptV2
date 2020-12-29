@@ -1,0 +1,74 @@
+#!/bin/bash
+
+sleep 5s
+
+# gnome-terminal -- ~/fajenSkryptV2/playVid &
+play ./bakaMiTaj.mp3 -q &
+
+./showIt "Dame" 1s &
+sleep .5s
+./showIt "Da" 1s &
+sleep .3s
+./showIt "Ne" 1s &
+sleep 1s
+./showIt "Dame" 1s &
+sleep .5s
+./showIt "Ju" 1s &
+sleep 1s
+./showIt "Dame" 1s &
+sleep 1s
+./showIt "DenoJo" 1s &
+sleep 1s
+./moveIt "Uuuuu" 0 700 .001s 900 1 0 5 &
+sleep .5s
+./inverseMoveIt "Uuuuu" 1920 300 .001s 900 1 0 5 &
+sleep 1
+./showIt "Baku" 1s &
+sleep .3s
+./showIt "Ma" 1s &
+sleep .3s
+./showIt "Ta" 1s &
+sleep 1.1s
+./showIt "Skide" 1s &
+sleep .3s
+./moveIt "Uuuuu" 0 700 .001s 900 1 0 5 &
+sleep .5s
+./showIt "Suki" 1s &
+sleep .8s
+./showIt "Suni" 1s &
+sleep .3s
+./showIt "De" 1s &
+sleep .5s
+./inverseMoveIt "Skrzypce" 910 1080 .001s 900 0 1 2 &
+sleep 2.5s
+./showIt "Dule" 1s &
+sleep .3s
+./showIt "Da" 1s &
+sleep .3s
+./showIt "Ka" 1s &
+sleep 1s
+./showIt "Suo" 1s &
+sleep .3s
+./showIt "Sa" 1s &
+sleep 2s
+./showIt "Kete" 1s &
+sleep .6s
+./showIt "Wo" 1s &
+sleep 2s
+./showIt "Jugadana" 1s &
+sleep .5s
+./showIt "Ni" 1s &
+sleep .3s
+./moveIt "Skrzypce" 0 500 .001s 2000 1 0 2 &
+sleep 2s
+./showIt "Pobo" 1s &
+sleep .3s
+./showIt "Ine" 1s &
+sleep .3s
+./showIt "Da" 1s &
+sleep 2s
+./showIt "Baka" 1s &
+sleep .3s
+./showIt "Mi" 1s &
+sleep .3s
+./showIt "Taj" 1s &

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+mplayer -geometry 200%:200% -really-quiet ~/Wideo/XD.mp4 &
+sleep .2
+wmctrl -r :ACTIVE: -e 0,$((0+$RANDOM%1920)),$((0+$RANDOM%1080)),500,500
+sleep 30s
