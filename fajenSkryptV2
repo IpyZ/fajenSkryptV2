@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Zależności: sox wmctrl zenity
+
 sleep 5s
 
 # gnome-terminal -- ~/fajenSkryptV2/playVid &
