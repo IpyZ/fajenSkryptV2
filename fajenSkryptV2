@@ -5,7 +5,7 @@
 sleep 5s
 
 # gnome-terminal -- ~/fajenSkryptV2/playVid &
-play ./bakaMiTaj.mp3 -q &
+./playIt ./bakaMiTaj.mp3 &
 
 ./showIt "Dame" 1s &
 sleep .5s
